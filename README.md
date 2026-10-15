@@ -6,8 +6,10 @@ Knowledge Recirculation**, hosted on
 
 On 15 October 2026 the owner explicitly approved restoring author names and
 affiliations on the public page and arXiv draft. Anonymous review materials
-remain separate. Author order and institution numbers follow the supplied
-manuscript. Institutional text identifiers are not official logos; approved
+remain separate. The owner-confirmed correction on the same date lists fifteen
+authors and only three affiliations: CUHK (1), Knowin.AI (2), and HKUST(GZ) (3).
+Ying-Cong Chen immediately precedes corresponding author James Cheng.
+Institutional text identifiers are not official logos; approved
 logo assets have not yet been supplied. No email or inferred author role is added.
 
 ## Preview and deployment
