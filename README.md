@@ -1,64 +1,56 @@
 # Anvil project homepage
 
-English static research project page for **Anvil: Scaling
-Embodied Spatial Intelligence through Knowledge Recirculation**. The framework
-connects Anvil-Gen, Anvil-Ben and Anvil-MOPD. The owner authorized public release
-on September 26, 2026. The project page is separate from the engineering source
-and the anonymous peer-review mirror.
+Static research page for **Anvil: Scaling Embodied Spatial Intelligence through
+Knowledge Recirculation**, hosted on
+[GitHub Pages](https://knowin-29.github.io/Anvil.github.io/).
 
-The public page omits author names, affiliations, project leadership roles and
-personal contact details. This is content-level de-identification, not a claim
-that the hosting account or repository history is anonymous. Required copyright
-and third-party license notices remain in the source repository.
+On 15 October 2026 the owner explicitly approved restoring author names and
+affiliations on the public page and arXiv draft. Anonymous review materials
+remain separate. Author order and institution numbers follow the supplied
+manuscript. Institutional text identifiers are not official logos; approved
+logo assets have not yet been supplied. No email or inferred author role is added.
 
-## Local preview and deployment
+## Preview and deployment
 
-For local preview: `python -m http.server 10324 --bind 127.0.0.1`.
-No build step or credentials are needed. The approved public destination is
-GitHub Pages; deployment uses the reviewed main branch.
-An account-based hosting URL or repository namespace can reveal ownership even
-when the page text omits author identities. Anonymous review requires an
-appropriate anonymous destination; editing this page alone does not establish it.
+`python -m http.server 10324 --bind 127.0.0.1`
 
-Edit `index.html` for content, `style.css` for appearance, and `site.js` for
-interactions. The site includes responsive layouts, light/dark
-themes, keyboard-accessible showcase tabs and enlargable figures. It loads no
-analytics, remote fonts, remote scripts or runtime APIs.
+Edit `index.html`, `style.css`, and `site.js`. There is no build step, analytics,
+remote font, runtime API or external script. All three showcase panels are
+visible; their figures enlarge in a keyboard-accessible dialog. Responsive
+layouts and light/dark themes are retained. GitHub Pages deploys the main branch.
 
-## Release boundary
+## Evidence and resource boundaries
 
-- Paper, data and model downloads remain unpublished placeholders. Source-code
-  release status is updated separately after its clean-history publication.
-- No private source, credentials, data index,
-  checkpoint files, review records or logs are copied into this repository.
-- Private manuscript drafts, the unpublished submission PDF and LaTeX source
-  are not included or published with this website.
-- Only selected existing Anvil figures and aggregate reported results are shown.
-- Text and the final-model table follow the submitted manuscript package
-  supplied by the owner and verified on October 12, 2026. The page explicitly labels the 5.8M / 160K scale and final
-  model values as manuscript-reported, not newly verified downloadable artifacts.
-- The interface has eleven native spatial formats. Framework and allocation
-  artwork are rendered directly from the owner-selected review manuscript's
-  Figure 1 and Figure 2. Original PDFs and their metadata are not published.
-- Table values follow `tables/eval_results.tex`, the table actually included by
-  the supplied final manuscript: BLINK 91.13, ERQA 50.52, mean 74.27 and gain
-  +9.29 pp over the base model. The previous page had used a different, inactive
-  table file. This update corrects source selection; it does not imply a new
-  evaluation of a released checkpoint. The manuscript itself is unchanged.
-- Provider names in the framework are illustrative; they do not establish that
-  those endpoints were used in a released production run. The historical routing
-  and repair studies remain explicitly separate from the final model.
-- Controlled coverage, routing and repair studies remain separate from the final
-  checkpoint. CPU timing covers construction from cached RGB-D frames, not full
-  semantic production. Semantic-uniform routing is the highlighted control.
-- Data downloads stay on hold. Model download links require matching weight
-  hashes, evaluation records and release approval. No unverified checkpoint is
-  offered under the final model's name.
-- No robotics-execution success or universal SOTA claim is implied.
+- First-screen highlights show separate controlled studies: +30.25 points for
+  mixed vs. replay placement, +2.13 for semantic-uniform vs. flat routing, and
+  111/11 = 10.09 times as many correct repairs at an equal call budget.
+- Coverage plots include all three arms, including the stronger vacancy-only
+  placement result. Routing plots start at zero and state the scene-bootstrap
+  interval. These are not scores of a released final MOPD checkpoint.
+- The seven-benchmark table remains explicitly manuscript-reported and pending
+  final weight/evaluation binding. It is not used as an unqualified headline.
+- Figure 1 uses the corrected source-grounded / held-out / training labels.
+  The older allocation figure is no longer displayed because its proportions
+  differ from the currently constructed package. Native scene illustrations,
+  supervision contracts, placement successes/regression and feedback repair
+  are all visible. Provider examples do not imply verified use on every record.
+- Local package: 5.8M records, 160K canonical images, 5.22M train / 580K held-out.
+  Structural checks are not semantic precision or human-review estimates.
+- [HF dataset](https://huggingface.co/datasets/Knowin-29/Anvil-Ben): public first
+  stage contains 464K CLEVR QA replay annotations, full file-level inventory,
+  image index and replay reconstruction. The other spatial records and original
+  image package are not publicly released.
+- [HF model](https://huggingface.co/Knowin-29/Anvil-MOPD-9B): public model-card
+  placeholder only. Four preparation SFT adapters remain in a separate private
+  staging repository; no final model weights are claimed.
+- [Engineering code](https://github.com/Knowin-29/Anvil/tree/arxiv-release-20261012)
+  is uploaded on its private release branch. The author PDF/LaTeX and private
+  review logs, data payloads and checkpoints are not copied into this website.
 
-The narrative structure takes inspiration from the
-[RynnBrain project page](https://alibaba-damo-academy.github.io/RynnBrain.github.io/).
-No RynnBrain code, images, logos or model results are copied.
+Presentation references: [RoboMME](https://robomme.github.io/index.html),
+[ICL for Robots](https://arxiv.org/abs/2609.36012), and the earlier
+[RynnBrain page](https://alibaba-damo-academy.github.io/RynnBrain.github.io/).
+No reference-site code, media, logos or model results are copied.
 
-Website code is MIT licensed. Anvil figures are provided for project presentation;
-underlying source datasets/images retain their original rights and licenses.
+Website code is MIT licensed. Anvil figures are shown for project presentation;
+source images and datasets retain their respective rights and licenses.
